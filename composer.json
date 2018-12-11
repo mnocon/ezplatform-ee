@@ -33,7 +33,7 @@
         "doctrine/orm": "^2.6.3",
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/ez-support-tools": "^0.2@dev",
-        "ezsystems/ezplatform-admin-ui": "^1.4@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-fix-dashboard as 1.4.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^3.1@dev",
         "ezsystems/ezplatform-admin-ui-modules": "^1.4@dev",
         "ezsystems/ezplatform-cron": "^2.0@dev",
