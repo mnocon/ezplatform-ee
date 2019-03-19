@@ -39,7 +39,7 @@ variables:
     env:
         # We disable Symfony Proxy, as we rather use Varnish
         SYMFONY_HTTP_CACHE: 0
-        SYMFONY_TRUSTED_PROXIES: "TRUST_REMOTE"
+#        SYMFONY_TRUSTED_PROXIES: "TRUST_REMOTE"
         # Change this if you use a different env then "prod", if you change this to "dev" remove "--no-dev" in build step
         SYMFONY_ENV: prod
         # Uncomment if you want to use DFS clustering:
