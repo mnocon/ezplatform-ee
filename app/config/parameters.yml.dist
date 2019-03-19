@@ -17,3 +17,4 @@ parameters:
     env(DATABASE_PASSWORD):
     env(DATABASE_CHARSET): utf8mb4
     env(DATABASE_COLLATION): utf8mb4_unicode_520_ci
+    purge_server: 'https://api.fastly.com'
