@@ -70,6 +70,9 @@ mounts:
     'var/encore':
         source: local
         source_path: encore
+    'var/sessions':
+        source: local
+        source_path: sessions
     'web/var':
         source: local
         source_path: var
