@@ -108,7 +108,7 @@ hooks:
 
         rm web/app_dev.php
         composer install  --prefer-dist --no-progress --no-interaction --optimize-autoloader
-        cd vendor/ezsystems/ezplatform/page-builder
+        cd vendor/ezsystems/ezplatform-page-builder
         patch -p1 -i /app/logging.patch
 
     # Deploy hook, access to services & done once (per cluster, not per node), only mounts are writable at this point
