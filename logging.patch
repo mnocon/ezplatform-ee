@@ -1,0 +1,169 @@
+From 2afa2940145bc0985ab01c15a7ed29fe5ac964b4 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Adam=20W=C3=B3js?= <adam.wojs@ez.no>
+Date: Thu, 21 Mar 2019 11:35:37 +0100
+Subject: [PATCH] EZEE-XXXX: Non matching issuer IP logging
+
+---
+ .../EditorialMode/PreAuthenticatedToken.php   | 26 +++++++++++++++++++
+ .../EditorialMode/TokenAuthenticator.php      |  4 ++-
+ .../Security/EditorialMode/TokenManager.php   |  6 ++++-
+ .../Security/EditorialMode/TokenRevoker.php   | 17 ++----------
+ .../EditorialMode/TokenRevokerInterface.php   |  6 ++---
+ 5 files changed, 38 insertions(+), 21 deletions(-)
+
+diff --git a/src/lib/Security/EditorialMode/PreAuthenticatedToken.php b/src/lib/Security/EditorialMode/PreAuthenticatedToken.php
+index 492bc509..6a0228dd 100644
+--- a/src/lib/Security/EditorialMode/PreAuthenticatedToken.php
++++ b/src/lib/Security/EditorialMode/PreAuthenticatedToken.php
+@@ -12,4 +12,30 @@
+ 
+ final class PreAuthenticatedToken extends BasePreAuthenticatedToken
+ {
++    /** @var string */
++    private $id;
++
++    /**
++     * @param string $id
++     * @param string|object $user
++     * @param mixed $credentials
++     * @param string $providerKey
++     * @param array $roles
++     */
++    public function __construct(string $id, $user, $credentials, $providerKey, array $roles = [])
++    {
++        parent::__construct($user, $credentials, $providerKey, $roles);
++
++        $this->id = $id;
++    }
++
++    /**
++     * Returns token UUID.
++     *
++     * @return string
++     */
++    public function getTokenId(): string
++    {
++        return $this->id;
++    }
+ }
+diff --git a/src/lib/Security/EditorialMode/TokenAuthenticator.php b/src/lib/Security/EditorialMode/TokenAuthenticator.php
+index 7eb03373..88c7400f 100644
+--- a/src/lib/Security/EditorialMode/TokenAuthenticator.php
++++ b/src/lib/Security/EditorialMode/TokenAuthenticator.php
+@@ -87,7 +87,7 @@ public function authenticateToken(TokenInterface $token, UserProviderInterface $
+         }
+ 
+         if (!$this->tokenRevoker->isValid($token)) {
+-            throw new InvalidTokenException('Revoked JWT Token');
++            throw new InvalidTokenException("Token id={$token->getTokenId()} is already revoked.");
+         }
+ 
+         $this->tokenRevoker->revoke($token);
+@@ -97,6 +97,7 @@ public function authenticateToken(TokenInterface $token, UserProviderInterface $
+         );
+ 
+         return new PreAuthenticatedToken(
++            $payload['jti'],
+             $user,
+             $payload,
+             $providerKey,
+@@ -155,6 +156,7 @@ public function createToken(Request $request, $providerKey)
+         $username = $payload[$this->tokenManager->getUserIdentityField()];
+ 
+         return new PreAuthenticatedToken(
++            $payload['jti'],
+             $username,
+             $payload,
+             $providerKey
+diff --git a/src/lib/Security/EditorialMode/TokenManager.php b/src/lib/Security/EditorialMode/TokenManager.php
+index f36356d1..a0013cac 100644
+--- a/src/lib/Security/EditorialMode/TokenManager.php
++++ b/src/lib/Security/EditorialMode/TokenManager.php
+@@ -9,6 +9,7 @@
+ namespace EzSystems\EzPlatformPageBuilder\Security\EditorialMode;
+ 
+ use Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface;
++use Lexik\Bundle\JWTAuthenticationBundle\Exception\JWTDecodeFailureException;
+ use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
+ use Ramsey\Uuid\Uuid;
+ use Symfony\Component\HttpFoundation\RequestStack;
+@@ -90,7 +91,10 @@ public function decodeFromString(string $token)
+ 
+         $request = $this->requestStack->getCurrentRequest();
+         if (!isset($payload['ip']) || $payload['ip'] !== $request->getClientIp()) {
+-            return false;
++            throw new JWTDecodeFailureException(
++                JWTDecodeFailureException::INVALID_TOKEN,
++                "Client IP ({$request->getClientIp()}) doesn't match token {$payload['jti']} issuer IP: {$payload['ip']}"
++            );
+         }
+ 
+         return $payload;
+diff --git a/src/lib/Security/EditorialMode/TokenRevoker.php b/src/lib/Security/EditorialMode/TokenRevoker.php
+index 5638cf8a..9258720e 100644
+--- a/src/lib/Security/EditorialMode/TokenRevoker.php
++++ b/src/lib/Security/EditorialMode/TokenRevoker.php
+@@ -10,7 +10,6 @@
+ 
+ use DateTime;
+ use Psr\Cache\CacheItemPoolInterface;
+-use Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken;
+ 
+ class TokenRevoker implements TokenRevokerInterface
+ {
+@@ -58,24 +57,12 @@ public function revoke(PreAuthenticatedToken $token): void
+     /**
+      * Generates cache item key.
+      *
+-     * @param \Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken $token
++     * @param \EzSystems\EzPlatformPageBuilder\Security\EditorialMode\PreAuthenticatedToken $token
+      *
+      * @return string
+      */
+     private function getKey(PreAuthenticatedToken $token): string
+     {
+-        return self::KEY_PREFIX . $this->getTokenId($token);
+-    }
+-
+-    /**
+-     * Extract token UUID from payload.
+-     *
+-     * @param \Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken $token
+-     *
+-     * @return string
+-     */
+-    private function getTokenId(PreAuthenticatedToken $token): string
+-    {
+-        return $token->getCredentials()['jti'];
++        return self::KEY_PREFIX . $token->getTokenId();
+     }
+ }
+diff --git a/src/lib/Security/EditorialMode/TokenRevokerInterface.php b/src/lib/Security/EditorialMode/TokenRevokerInterface.php
+index 15adbec3..0a84efd1 100644
+--- a/src/lib/Security/EditorialMode/TokenRevokerInterface.php
++++ b/src/lib/Security/EditorialMode/TokenRevokerInterface.php
+@@ -6,14 +6,12 @@
+  */
+ namespace EzSystems\EzPlatformPageBuilder\Security\EditorialMode;
+ 
+-use Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken;
+-
+ interface TokenRevokerInterface
+ {
+     /**
+      * Returns true if given token has not been revoked.
+      *
+-     * @param \Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken $token
++     * @param \EzSystems\EzPlatformPageBuilder\Security\EditorialMode\PreAuthenticatedToken $token
+      *
+      * @return bool
+      */
+@@ -22,7 +20,7 @@ public function isValid(PreAuthenticatedToken $token): bool;
+     /**
+      * Revokes given token.
+      *
+-     * @param \Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken $token
++     * @param \EzSystems\EzPlatformPageBuilder\Security\EditorialMode\PreAuthenticatedToken $token
+      */
+     public function revoke(PreAuthenticatedToken $token): void;
+ }
