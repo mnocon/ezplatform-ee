@@ -27,7 +27,7 @@
         "ezsystems/ezplatform-calendar": "^1.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
-        "ezsystems/ezplatform-graphql": "^2.0@dev",
+        "ezsystems/ezplatform-graphql": "dev-ezp30957-ungenerated_types as 2.0.x-dev",
         "ezsystems/ezplatform-http-cache": "^1.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
