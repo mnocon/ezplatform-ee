@@ -32,8 +32,6 @@ default:
                 bootstrap: config/bootstrap.php
                 path: src/Kernel.php
                 class: App\Kernel
-                env: behat
-                debug: false
 
         EzSystems\BehatBundle\BehatExtension: ~
 
