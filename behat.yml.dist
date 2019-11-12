@@ -29,9 +29,11 @@ default:
 
         Behat\Symfony2Extension:
             kernel:
-                bootstrap: config/bootstrap.php
                 path: src/Kernel.php
                 class: App\Kernel
+                bootstrap: config/bootstrap.php
+                env: behat
+
 
         EzSystems\BehatBundle\BehatExtension: ~
 
