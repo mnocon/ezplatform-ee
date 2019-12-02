@@ -11,38 +11,82 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/DominikaK/ezplatform-richtext.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/DominikaK/ezplatform-admin-ui.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/DominikaK/ezplatform-admin-ui-modules.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/DominikaK/repository-forms.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/DominikaK/ezplatform-user.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/flex-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-calendar.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow.git"
+        }
     ],
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "ezsystems/date-based-publisher": "^4.0@dev",
+        "ezsystems/date-based-publisher": "dev-ezp-31020-microcopy-revision as 4.0.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-ezp-31020-microcopy-revision as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@dev",
-        "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
-        "ezsystems/ezplatform-calendar": "^1.0@dev",
+        "ezsystems/ezplatform-admin-ui-modules": "dev-ezp-31020-microcopy-revision as 2.0.x-dev",
+        "ezsystems/ezplatform-calendar": "dev-ezp-31020-microcopy-revision as 1.0.x-dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^1.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
-        "ezsystems/ezplatform-form-builder": "^2.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-ezp-31020-microcopy-revision as 2.0.x-dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
-        "ezsystems/ezplatform-richtext": "^2.0@dev",
+        "ezsystems/ezplatform-richtext": "dev-ezp-31020-microcopy-revision as 2.0.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
-        "ezsystems/ezplatform-user": "^2.0@dev",
-        "ezsystems/ezplatform-workflow": "^2.0@dev",
+        "ezsystems/ezplatform-user": "dev-ezp-31020-microcopy-revision as 2.0.x-dev",
+        "ezsystems/ezplatform-workflow": "dev-ezp-31020-microcopy-revision as 2.0.x-dev",
         "ezsystems/ezpublish-kernel": "^8.0@dev",
-        "ezsystems/flex-workflow": "^4.0@dev",
-        "ezsystems/repository-forms": "^3.0@dev",
+        "ezsystems/flex-workflow": "dev-ezp-31020-microcopy-revision as 4.0.x-dev",
+        "ezsystems/repository-forms": "dev-ezp-31020-microcopy-revision as 3.0.x-dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.3",
         "knplabs/knp-menu-bundle": "^2.2",
