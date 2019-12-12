@@ -11,7 +11,11 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezpublish-kernel-ee.git"
+        }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
