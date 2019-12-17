@@ -14,7 +14,7 @@
         { "type": "composer", "url": "https://updates.ez.no/ttl" },
         {
             "type": "vcs",
-            "url": "https://github.com/dew326/ezplatform-admin-ui.git"
+            "url": "https://github.com/mnocon/ezplatform-admin-ui.git"
         }
     ],
     "require": {
@@ -24,7 +24,7 @@
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "dev-new-udw-beta as 2.0.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-new-udw-tests as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@dev",
         "ezsystems/ezplatform-admin-ui-modules": "dev-feature/udw as 2.0.x-dev",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
