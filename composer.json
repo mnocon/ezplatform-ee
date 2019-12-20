@@ -14,7 +14,7 @@
         { "type": "composer", "url": "https://updates.ez.no/ttl" },
         {
             "type": "vcs",
-            "url": "https://github.com/mnocon/ezplatform-admin-ui.git"
+            "url": "https://github.com/dew326/ezplatform-admin-ui.git"
         }
     ],
     "require": {
@@ -24,7 +24,7 @@
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "dev-new-udw-tests as 2.0.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-new-udw-beta as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@dev",
         "ezsystems/ezplatform-admin-ui-modules": "dev-feature/udw as 2.0.x-dev",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
@@ -38,13 +38,13 @@
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-rest": "dev-ezp-30882-thumbnail as 1.0.x-dev",
+        "ezsystems/ezplatform-rest": "^1.0@dev",
         "ezsystems/ezplatform-richtext": "^2.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "ezsystems/ezpublish-kernel": "dev-ezp-30882-thumbnail as 8.0.x-dev",
+        "ezsystems/ezpublish-kernel": "^8.0@dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
         "ezsystems/ezplatform-content-comparison": "^1.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.3",
