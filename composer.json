@@ -44,7 +44,7 @@
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "ezsystems/ezpublish-kernel": "dev-master#9ebdfaf2ed197d51abf34e75e4691ad2733f8226",
+        "ezsystems/ezpublish-kernel": "^8.0@dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
         "ezsystems/ezplatform-content-comparison": "^1.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.3",
