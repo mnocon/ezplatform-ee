@@ -22,6 +22,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-fieldtype.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ezsystems/ezplatform-workflow.git"
         },
         {
@@ -52,11 +56,11 @@
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
         "ezsystems/ezplatform-form-builder": "dev-ezp-30639-deprecate-view-location as 2.0.x-dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
-        "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
+        "ezsystems/ezplatform-page-fieldtype": "dev-ezp-30639-deprecate-view-location as 2.0.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
-        "ezsystems/ezplatform-richtext": "^2.0@dev",
+        "ezsystems/ezplatform-richtext": "^dev-ezp-30639-deprecate-view-location as 2.0.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
