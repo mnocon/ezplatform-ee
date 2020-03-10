@@ -10,9 +10,24 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "0AD63C06-C8CA-4331-B226-C69B6080E899": {
+            "type": "vcs",
+            "url": "https://github.com/webhdx/ezplatform-rest"
+        },
+        "F908D3A1-65B8-4A23-8D46-38AE1AD803BB": {
+            "type": "vcs",
+            "url": "https://github.com/webhdx/ezplatform-solr-search-engine"
+        },
+        "72F726CC-C1A2-4208-9D2E-0976FF08255B": {
+            "type": "vcs",
+            "url": "https://github.com/webhdx/ezpublish-kernel"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -24,33 +39,33 @@
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@dev",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
+        "ezsystems/ezplatform-content-comparison": "^1.0@dev",
+        "ezsystems/ezplatform-content-forms": "^1.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
-        "ezsystems/ezplatform-graphql": "^2.0@dev",
-        "ezsystems/ezplatform-http-cache": "^2.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
+        "ezsystems/ezplatform-graphql": "^2.0@dev",
+        "ezsystems/ezplatform-http-cache": "^2.0@dev",
+        "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-rest": "^1.0@dev",
+        "ezsystems/ezplatform-rest": "dev-new_criterions as 1.0.x-dev",
         "ezsystems/ezplatform-richtext": "^2.0@dev",
-        "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
+        "ezsystems/ezplatform-solr-search-engine": "dev-new_criterions as 3.0.x-dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "ezsystems/ezpublish-kernel": "^8.0@dev",
-        "ezsystems/ezplatform-content-forms": "^1.0@dev",
-        "ezsystems/ezplatform-content-comparison": "^1.0@dev",
+        "ezsystems/ezpublish-kernel": "dev-new_criterions as 8.0.x-dev",
         "friendsofsymfony/jsrouting-bundle": "^2.3",
+        "gregwar/captcha-bundle": "^2.0",
         "knplabs/knp-menu-bundle": "^2.2",
         "monolog/monolog": "^1.25.2",
         "php-http/guzzle6-adapter": "^2.0",
         "platformsh/symfonyflex-bridge": "^2.2",
         "sensio/framework-extra-bundle": "^5.1",
-        "gregwar/captcha-bundle": "^2.0",
         "sensiolabs/security-checker": "^5.0",
         "symfony/asset": "^4.3",
         "symfony/cache": "^4.3",
