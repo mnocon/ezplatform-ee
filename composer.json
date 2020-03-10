@@ -10,9 +10,40 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "483ed96a-85fe-4747-8357-c99058e251ce": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezpublish-kernel"
+        },
+        "22d3455a-a711-4611-a529-971aa380d890": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-content-forms"
+        },
+        "f5437826-21ab-4730-b809-5f879781b512": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
+        },
+        "f11f7cc4-f23d-43e2-be9a-72bf5b1db9a2": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-fieldtype"
+        },
+        "9db3a9d3-e794-4404-9bf8-e64f79280bb6": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "3c824203-0c09-43e8-b490-b57976a2a374": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "15cbd3f6-ac4d-4fdd-a9e2-02a31eaee65f": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-richtext"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -20,37 +51,37 @@
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-content_service_typehint as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@dev",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
+        "ezsystems/ezplatform-content-comparison": "^1.0@dev",
+        "ezsystems/ezplatform-content-forms": "dev-content_service_typehint as 1.0.x-dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
+        "ezsystems/ezplatform-ee-installer": "^3.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-content_service_typehint as 2.0.x-dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
-        "ezsystems/ezplatform-ee-installer": "^3.0@dev",
-        "ezsystems/ezplatform-form-builder": "^2.0@dev",
-        "ezsystems/ezplatform-page-builder": "^2.0@dev",
-        "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
+        "ezsystems/ezplatform-page-builder": "dev-content_service_typehint as 2.0.x-dev",
+        "ezsystems/ezplatform-page-fieldtype": "dev-content_service_typehint as 2.0.x-dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
-        "ezsystems/ezplatform-richtext": "^2.0@dev",
+        "ezsystems/ezplatform-richtext": "dev-content_service_typehint as 2.0.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "ezsystems/ezpublish-kernel": "^8.0@dev",
-        "ezsystems/ezplatform-content-forms": "^1.0@dev",
-        "ezsystems/ezplatform-content-comparison": "^1.0@dev",
+        "ezsystems/ezpublish-kernel": "dev-content_service_typehint as 8.0.x-dev",
         "friendsofsymfony/jsrouting-bundle": "^2.3",
+        "gregwar/captcha-bundle": "^2.0",
         "knplabs/knp-menu-bundle": "^2.2",
         "monolog/monolog": "^1.25.2",
         "php-http/guzzle6-adapter": "^2.0",
         "platformsh/symfonyflex-bridge": "^2.2",
         "sensio/framework-extra-bundle": "^5.1",
-        "gregwar/captcha-bundle": "^2.0",
         "sensiolabs/security-checker": "^5.0",
         "symfony/asset": "^4.3",
         "symfony/cache": "^4.3",
