@@ -62,7 +62,7 @@ return [
     EzSystems\EzPlatformSiteFactoryBundle\EzPlatformSiteFactoryBundle::class => ['all' => true],
     EzSystems\EzPlatformGraphQL\EzSystemsEzPlatformGraphQLBundle::class => ['all' => true],
     EzSystems\EzPlatformQueryFieldType\Symfony\EzSystemsEzPlatformQueryFieldTypeBundle::class => ['all' => true],
-    EzSystems\EzPlatformContentComparisonBundle\EzPlatformContentComparisonBundle::class => ['all' => true],
+    EzSystems\EzPlatformVersionComparisonBundle\EzPlatformVersionComparisonBundle::class => ['all' => true],
     // GraphQL bundles have to be loaded after EzSystemsEzPlatformGraphQLBundle
     Overblog\GraphQLBundle\OverblogGraphQLBundle::class => ['all' => true],
     Overblog\GraphiQLBundle\OverblogGraphiQLBundle::class => ['dev' => true],
