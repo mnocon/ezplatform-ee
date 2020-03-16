@@ -18,6 +18,10 @@
         "D8ED4DA1-AA19-4DCF-AE0A-2F31DC2611CF": {
             "type": "vcs",
             "url": "https://github.com/ezsystems/ezpublish-kernel"
+        },
+        "dupa-rzepa-kalarepa": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-version-comparison"
         }
     },
     "require": {
