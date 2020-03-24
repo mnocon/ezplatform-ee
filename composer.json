@@ -10,17 +10,32 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "8DDEE840-E584-4EA3-BFEE-FBBE7424BD4E": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "6D80985B-FC94-453C-9CE5-22F0C44F55AC": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "C7C0F9BB-DD59-4AC1-A3CB-05EC80FEADC7": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-ee-installer"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "ezsystems/date-based-publisher": "^4.0@dev",
+        "ezsystems/date-based-publisher": "dev-EZEE-2988-added-scheduler-for-hiding-content as 4.0.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZEE-2988-added-scheduler-for-hiding-content as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@beta",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
@@ -28,7 +43,7 @@
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
-        "ezsystems/ezplatform-ee-installer": "^3.0@dev",
+        "ezsystems/ezplatform-ee-installer": "dev-ezee_2988 as 3.0.x-dev",
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
