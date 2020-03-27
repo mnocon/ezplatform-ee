@@ -10,41 +10,96 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "1B46549D-64EC-48E6-9505-6B1E800DF28C": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "29D14077-6C37-4D05-A0A6-A90ABB2EB369": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ez-support-tools"
+        },
+        "53E3745F-4C80-4074-95C9-EB27F38D4667": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "9FAD5AF9-187A-4E80-9943-ED1F8A53724E": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-calendar"
+        },
+        "CC0B8286-1E8E-44FD-A530-27711BF5C1B9": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
+        },
+        "7E0EDF63-47B8-46EA-BBD0-1C072F0C07D0": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-graphql"
+        },
+        "E33658D0-FF80-4248-AD24-FF6FD76E4DFB": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-matrix-fieldtype"
+        },
+        "358070B0-F0BE-41C7-9F91-8C2FAF992D7B": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "D6CAAC3F-1E6F-4317-A1DC-B0E82FF47CD8": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-query-fieldtype"
+        },
+        "0351E880-09E4-4440-9007-B61CC905CA08": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-site-factory"
+        },
+        "072A60D5-4AFB-4B3F-8C0E-512553C34757": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-user"
+        },
+        "6464448D-A2A3-4762-B8A4-2C8DAD0082F3": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-version-comparison"
+        },
+        "E27C9506-F01A-45A0-AE6E-1311B08F0E45": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "ezsystems/date-based-publisher": "^4.0@dev",
+        "ezsystems/date-based-publisher": "dev-remove-admin-ui-modules as 4.0.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
-        "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ez-support-tools": "dev-remove-admin-ui-modules as 2.0.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-remove-admin-ui-modules as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@beta",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
-        "ezsystems/ezplatform-calendar": "^1.0@dev",
+        "ezsystems/ezplatform-calendar": "dev-remove-admin-ui-modules as 1.0.x-dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
-        "ezsystems/ezplatform-form-builder": "^2.0@dev",
-        "ezsystems/ezplatform-graphql": "^2.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-remove-admin-ui-modules as 2.0.x-dev",
+        "ezsystems/ezplatform-graphql": "dev-remove-admin-ui-modules as 2.0.x-dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
         "ezsystems/ezplatform-kernel": "^1.0@dev",
-        "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-page-builder": "^2.0@dev",
+        "ezsystems/ezplatform-matrix-fieldtype": "dev-remove-admin-ui-modules as 2.0.x-dev",
+        "ezsystems/ezplatform-page-builder": "dev-remove-admin-ui-modules as 2.0.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-query-fieldtype": "^2.0@dev",
+        "ezsystems/ezplatform-query-fieldtype": "dev-remove-admin-ui-modules as 2.0.x-dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
         "ezsystems/ezplatform-richtext": "^2.0@dev",
-        "ezsystems/ezplatform-site-factory": "^1.0@dev",
+        "ezsystems/ezplatform-site-factory": "dev-remove-admin-ui-modules as 1.0.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
-        "ezsystems/ezplatform-user": "^2.0@dev",
-        "ezsystems/ezplatform-version-comparison": "^1.0@dev",
-        "ezsystems/ezplatform-workflow": "^2.0@dev",
+        "ezsystems/ezplatform-user": "dev-remove-admin-ui-modules as 2.0.x-dev",
+        "ezsystems/ezplatform-version-comparison": "dev-remove-admin-ui-modules as 1.0.x-dev",
+        "ezsystems/ezplatform-workflow": "dev-remove-admin-ui-modules as 2.0.x-dev",
         "ezsystems/templated-uri-bundle": "^3.3@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.5",
         "gregwar/captcha-bundle": "^2.0",
