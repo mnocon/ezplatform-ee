@@ -10,9 +10,16 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "EE709534-E22B-40BC-A97C-767D1C863C02": {
+            "type": "vcs",
+            "url": "https://github.com/alongosz/ezplatform-kernel"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -31,7 +38,7 @@
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
-        "ezsystems/ezplatform-kernel": "^1.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-ezp-31300-replaced-dbh-with-doctrine-in-url-search as 1.0.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
