@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "5957EFCC-1EF1-41C3-A12D-9EE2E1546D44": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-kernel"
+        },
+        "EEF33EA5-40C7-490A-A827-00EE36278830": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -20,7 +31,7 @@
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-31383-role-copying as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@beta",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
@@ -31,7 +42,7 @@
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
-        "ezsystems/ezplatform-kernel": "^1.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-EZP-31383-roles-copying as 1.0.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
