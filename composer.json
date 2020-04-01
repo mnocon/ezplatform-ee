@@ -10,17 +10,32 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "9C296B7A-4BFC-41BB-8B81-2A94EC8A6A99": {
+            "type": "vcs",
+            "url": "https://github.com/webhdx/ezplatform-kernel"
+        },
+        "540FB540-92FD-4CF0-8D19-BB7D47562370": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "48D46605-596B-465D-A352-AC1DFF9D8AB0": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ez-support-tools"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
-        "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ez-support-tools": "dev-remove_dynamic_settings as 2.0.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-remove_dynamic_settings as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@beta",
         "ezsystems/ezplatform-calendar": "^1.0@dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
@@ -31,7 +46,7 @@
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
-        "ezsystems/ezplatform-kernel": "^1.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-remove_dynamic_settings as 1.0.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
@@ -44,9 +59,9 @@
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-version-comparison": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "hautelook/templated-uri-bundle": "^3.2",
         "friendsofsymfony/jsrouting-bundle": "^2.5",
         "gregwar/captcha-bundle": "^2.0",
+        "hautelook/templated-uri-bundle": "^3.2",
         "knplabs/knp-menu-bundle": "^3.0",
         "monolog/monolog": "^2.0",
         "php-http/guzzle6-adapter": "^2.0",
