@@ -10,9 +10,16 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "315b2d7e-beeb-412d-a2be-11b25efe3f53": {
+            "type": "vcs",
+            "url": "https://github.com/alongosz/ezplatform-rest"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -36,7 +43,7 @@
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-rest": "^1.0@dev",
+        "ezsystems/ezplatform-rest": "dev-drop-deprecated-criteria-input-node as 1.0.x-dev",
         "ezsystems/ezplatform-richtext": "^2.0@dev",
         "ezsystems/ezplatform-site-factory": "^1.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
@@ -44,9 +51,9 @@
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-version-comparison": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "hautelook/templated-uri-bundle": "^3.2",
         "friendsofsymfony/jsrouting-bundle": "^2.5",
         "gregwar/captcha-bundle": "^2.0",
+        "hautelook/templated-uri-bundle": "^3.2",
         "knplabs/knp-menu-bundle": "^3.0",
         "monolog/monolog": "^2.0",
         "php-http/guzzle6-adapter": "^2.0",
