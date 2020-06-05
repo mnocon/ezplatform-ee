@@ -11,7 +11,11 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+      {
+          "type": "vcs",
+          "url": "https://github.com/micszo/ezplatform-kernel"
+      }
     ],
     "require": {
         "php": "^7.3",
@@ -32,7 +36,7 @@
         "ezsystems/ezplatform-graphql": "~2.0.0@dev",
         "ezsystems/ezplatform-http-cache": "~2.0.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
-        "ezsystems/ezplatform-kernel": "~1.0.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-EZP-31677-7.5-1.0 as 1.0.0.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.0.0@dev",
         "ezsystems/ezplatform-page-builder": "~2.0.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.0.0@dev",
