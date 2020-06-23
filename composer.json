@@ -10,9 +10,16 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "36374B32-F2AD-4230-BDD4-A552EA5B2D76": {
+            "type": "vcs",
+            "url": "https://github.com/webhdx/ezplatform-kernel"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -33,7 +40,7 @@
         "ezsystems/ezplatform-graphql": "~2.0.0@dev",
         "ezsystems/ezplatform-http-cache": "~2.0.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
-        "ezsystems/ezplatform-kernel": "~1.0.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-removed_config_resolver_cleanup as 1.0.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.0.0@dev",
         "ezsystems/ezplatform-page-builder": "~2.0.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.0.0@dev",
