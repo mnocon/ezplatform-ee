@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "EC88026E-2385-4706-B687-EFB008E92C83": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezpublish-kernel"
+        },
+        "D6FEF894-1763-488B-9F83-E0D65EE3DFEE": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        }
+    },
     "replace": {
         "ezsystems/ezstudio": "*",
         "ezsystems/ezpublish-community": "*"
@@ -21,11 +32,18 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle/"
         },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
     },
     "require": {
         "php": "^7.1.3",
@@ -34,7 +52,7 @@
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/doctrine-dbal-schema": "^0.1@dev",
         "ezsystems/ez-support-tools": "^1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^1.5@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-31584 as 1.5.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^1.5@dev",
         "ezsystems/ezplatform-core": "^1.0@dev",
@@ -53,7 +71,7 @@
         "ezsystems/ezplatform-standard-design": "^0.2@dev",
         "ezsystems/ezplatform-user": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^1.1@dev",
-        "ezsystems/ezpublish-kernel": "^7.5@dev",
+        "ezsystems/ezpublish-kernel": "dev-EZP-31584 as 7.5.x-dev",
         "ezsystems/flex-workflow": "^3.2@dev",
         "ezsystems/repository-forms": "^2.5@dev",
         "ezsystems/symfony-tools": "~1.1.0@dev",
