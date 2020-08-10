@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "A7F8B69E-6A34-4E38-B56F-0AC2AD7462A4": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "D463EDCE-F34E-4618-B47E-7EBD83919F3C": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-search"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -21,7 +32,7 @@
         "ezsystems/date-based-publisher": "~4.1.0@dev",
         "ezsystems/doctrine-dbal-schema": "~1.0.0@dev",
         "ezsystems/ez-support-tools": "~2.1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~2.1.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-31777 as 2.1.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.1.0@beta",
         "ezsystems/ezplatform-calendar": "~1.1.0@dev",
         "ezsystems/ezplatform-content-forms": "~1.1.0@dev",
@@ -42,7 +53,7 @@
         "ezsystems/ezplatform-query-fieldtype": "~2.1.0@dev",
         "ezsystems/ezplatform-rest": "~1.1.0@dev",
         "ezsystems/ezplatform-richtext": "~2.1.0@dev",
-        "ezsystems/ezplatform-search": "~1.0.0@dev",
+        "ezsystems/ezplatform-search": "dev-EZP-31777 as 1.0.x-dev",
         "ezsystems/ezplatform-site-factory": "~1.1.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "~3.1.0@dev",
         "ezsystems/ezplatform-standard-design": "~0.3.0@dev",
