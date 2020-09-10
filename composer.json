@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "520A93CC-187D-41E1-B537-77435FD3BF3F": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "E14A91B0-17A9-4EA8-B786-39823E8D7066": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
+        }
+    },
     "replace": {
         "ezsystems/ezstudio": "*",
         "ezsystems/ezpublish-community": "*"
@@ -21,11 +32,18 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle/"
         },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
     },
     "require": {
         "php": "^7.1.3",
@@ -41,12 +59,12 @@
         "ezsystems/ezplatform-cron": "^2.0@dev",
         "ezsystems/ezplatform-design-engine": "^2.0@dev",
         "ezsystems/ezplatform-ee-installer": "^2.5@dev",
-        "ezsystems/ezplatform-form-builder": "^1.2@dev",
+        "ezsystems/ezplatform-form-builder": "dev-EZEE-3089-form-block-tests as 1.2.x-dev",
         "ezsystems/ezplatform-graphql": "^1.0@dev",
         "ezsystems/ezplatform-http-cache": "^1.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^1.0@dev",
-        "ezsystems/ezplatform-page-builder": "^1.3@dev",
+        "ezsystems/ezplatform-page-builder": "dev-EZEE-3089-form-block-tests as 1.3.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^1.3@dev",
         "ezsystems/ezplatform-richtext": "^1.1@dev",
         "ezsystems/ezplatform-solr-search-engine": "^1.6@dev",
