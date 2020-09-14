@@ -10,21 +10,36 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "9FA41BD8-93E4-4E63-886C-30815B91CCD1": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "5F388BDB-5E33-487C-9FC7-9521A8AA1885": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "E3DE163C-E4CB-4621-A53F-3AFA4BE7C403": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-content-forms"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
-        "ezsystems/date-based-publisher": "^4.2@dev",
+        "ezsystems/date-based-publisher": "dev-ezp-31784-autosave as 4.2.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.2@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.2@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-ezp-31784-autosave as 2.2.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.1.0@beta",
         "ezsystems/ezplatform-calendar": "^1.2@dev",
-        "ezsystems/ezplatform-content-forms": "^1.2@dev",
+        "ezsystems/ezplatform-content-forms": "dev-ezp-31784-autosave as 1.2.x-dev",
         "ezsystems/ezplatform-core": "^2.2@dev",
         "ezsystems/ezplatform-cron": "^3.1@dev",
         "ezsystems/ezplatform-design-engine": "^3.1@dev",
