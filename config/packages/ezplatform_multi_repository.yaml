@@ -1,0 +1,81 @@
+services:
+    cache.tagaware.filesystem.site1:
+        public: true
+        class: Symfony\Component\Cache\Adapter\FilesystemTagAwareAdapter
+        parent: cache.adapter.filesystem
+        tags:
+            -   name: cache.pool
+                clearer: cache.app_clearer
+                namespace: 'site1'
+
+    cache.tagaware.filesystem.site2:
+        public: true
+        class: Symfony\Component\Cache\Adapter\FilesystemTagAwareAdapter
+        parent: cache.adapter.filesystem
+        tags:
+            -   name: cache.pool
+                clearer: cache.app_clearer
+                namespace: 'site2'
+
+doctrine:
+    dbal:
+        connections:
+            site1:
+                driver: '%database_driver%'
+                charset: '%database_charset%'
+                default_table_options:
+                    charset: '%database_charset%'
+                    collate: '%database_collation%'
+                url: '%env(resolve:SITE1_DATABASE_URL)%'
+
+            site2:
+                driver: '%database_driver%'
+                charset: '%database_charset%'
+                default_table_options:
+                    charset: '%database_charset%'
+                    collate: '%database_collation%'
+                url: '%env(resolve:SITE2_DATABASE_URL)%'
+
+ezplatform:
+    repositories:
+        site1:
+            storage:
+                engine: legacy
+                connection: site1
+            search:
+                engine: '%search_engine%'
+                connection: default
+
+        site2:
+            storage:
+                engine: legacy
+                connection: site2
+            search:
+                engine: '%search_engine%'
+                connection: default
+
+    siteaccess:
+        list: [site1, site2, admin_site1, admin_site2]
+        groups:
+            site1_group: [ site1, admin_site1 ]
+            site2_group: [ site2, admin_site2 ]
+            admin_group: [ admin_site1, admin_site2 ]
+        match:
+            Map\Host:
+                site1.ezp-31740.wip: site1
+                admin.site1.ezp-31740.wip: admin_site1
+                site2.ezp-31740.wip: site2
+                admin.site2.ezp-31740.wip: admin_site2
+
+    system:
+        site1_group:
+            languages: [ fre-FR, eng-GB ]
+            repository: site1
+            var_dir: var/site1
+            cache_service_name: 'cache.tagaware.filesystem.site1'
+
+        site2_group:
+            languages: [ fre-FR, eng-GB ]
+            repository: site2
+            var_dir: var/site2
+            cache_service_name: 'cache.tagaware.filesystem.site2'
