@@ -26,6 +26,10 @@
         "E3DE163C-E4CB-4621-A53F-3AFA4BE7C403": {
             "type": "vcs",
             "url": "https://github.com/ezsystems/ezplatform-content-forms"
+        },
+        "E3DE163C-AAAA-4621-A53F-3AFA4BE7C403": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
         }
     },
     "require": {
@@ -45,7 +49,7 @@
         "ezsystems/ezplatform-design-engine": "^3.1@dev",
         "ezsystems/ezplatform-ee-installer": "^3.2@dev",
         "ezsystems/ezplatform-elastic-search-engine": "^1.1@dev",
-        "ezsystems/ezplatform-form-builder": "^2.2@dev",
+        "ezsystems/ezplatform-form-builder": "dev-ezp-31784-autosave as 2.2.x-dev",
         "ezsystems/ezplatform-graphql": "^2.2@dev",
         "ezsystems/ezplatform-http-cache": "^2.2@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.1@dev",
