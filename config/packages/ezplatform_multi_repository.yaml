@@ -38,6 +38,11 @@ doctrine:
 
 ezplatform:
     repositories:
+        default:
+            storage: ~
+            search:
+                engine: '%search_engine%'
+                connection: default
         site1:
             storage:
                 engine: legacy
