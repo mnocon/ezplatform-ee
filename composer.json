@@ -22,6 +22,10 @@
         "990C61A6-36CE-481E-AE34-6D13F27ABBCE": {
             "type": "vcs",
             "url": "https://github.com/kaff/ezplatform-kernel"
+        },
+        "lorem-random-ipsum-123135425-dolor-sit": {
+            "type": "vcs",
+            "url": "https://github.com/kaff/ezplatform-admin-ui"
         }
     },
     "require": {
@@ -32,7 +36,7 @@
         "ezsystems/date-based-publisher": "~4.1.0@dev",
         "ezsystems/doctrine-dbal-schema": "~1.0.0@dev",
         "ezsystems/ez-support-tools": "~2.1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~2.1.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-fix/EZP-31462-handle-users-with-unsupported-password-hash-types as 2.1.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.1.0@beta",
         "ezsystems/ezplatform-calendar": "~1.1.0@dev",
         "ezsystems/ezplatform-content-forms": "~1.1.0@dev",
