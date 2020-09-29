@@ -10,33 +10,56 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "60E0C496-60B2-428D-9F4C-8170B9A8DDCC": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
+        },
+        "F31B44EB-8B9E-4BF6-A0A3-B774F61953AB": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "6A224B61-30B8-4BF2-A6ED-D2878D17EBF5": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-content-forms"
+        },
+        "7232DDDD-B8C6-4BD9-AB23-7726D62CEC31": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "1726E741-C6D6-42F2-8E2D-2ED137419AAB": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
-        "ezsystems/date-based-publisher": "^4.2@dev",
+        "ezsystems/date-based-publisher": "dev-ezp-31784-autosave as 4.2.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.2@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.2@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-ezp-31784-autosave as 2.2.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.1.0@beta",
         "ezsystems/ezplatform-calendar": "^1.2@dev",
-        "ezsystems/ezplatform-content-forms": "^1.2@dev",
+        "ezsystems/ezplatform-content-forms": "dev-ezp-31784-autosave as 1.2.x-dev",
         "ezsystems/ezplatform-core": "^2.2@dev",
         "ezsystems/ezplatform-cron": "^3.1@dev",
         "ezsystems/ezplatform-design-engine": "^3.1@dev",
         "ezsystems/ezplatform-ee-installer": "^3.2@dev",
         "ezsystems/ezplatform-elastic-search-engine": "^1.1@dev",
-        "ezsystems/ezplatform-form-builder": "^2.2@dev",
+        "ezsystems/ezplatform-form-builder": "dev-ezp-31784-autosave as 2.2.x-dev",
         "ezsystems/ezplatform-graphql": "^2.2@dev",
         "ezsystems/ezplatform-http-cache": "^2.2@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.1@dev",
         "ezsystems/ezplatform-kernel": "^1.2@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.1@dev",
-        "ezsystems/ezplatform-page-builder": "^2.2@dev",
+        "ezsystems/ezplatform-page-builder": "dev-ezp-31784-autosave as 2.2.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.2@dev",
         "ezsystems/ezplatform-permissions": "^1.1@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.2@dev",
