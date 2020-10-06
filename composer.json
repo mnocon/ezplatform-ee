@@ -10,9 +10,16 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "5E1A5E88-8C32-497A-BBF9-20802E4FB489": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-site-factory"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -45,7 +52,7 @@
         "ezsystems/ezplatform-richtext": "^2.2@dev",
         "ezsystems/ezplatform-search": "^1.1@dev",
         "ezsystems/ezplatform-segmentation": "^1.0@dev",
-        "ezsystems/ezplatform-site-factory": "^1.2@dev",
+        "ezsystems/ezplatform-site-factory": "dev-EZEE-3288-redesign as 1.2.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.2@dev",
         "ezsystems/ezplatform-standard-design": "^0.4@dev",
         "ezsystems/ezplatform-user": "^2.2@dev",
