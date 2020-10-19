@@ -10,15 +10,30 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "637A790C-784F-410F-911B-C7D9723192E6": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "588FEC69-9019-4EB5-944B-CD71500ADF60": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "BC41DCB0-278B-433C-88EC-99AC2A7BB2CF": {
+            "type": "vcs",
+            "url": "https://github.com/ciastektk/ezplatform-ee-installer"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
-        "ezsystems/date-based-publisher": "^4.2@dev",
+        "ezsystems/date-based-publisher": "dev-EZP-32040-adjust-tests as 4.2.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.2@dev",
         "ezsystems/ezplatform-admin-ui": "^2.2@dev",
@@ -29,7 +44,7 @@
         "ezsystems/ezplatform-core": "^2.2@dev",
         "ezsystems/ezplatform-cron": "^3.1@dev",
         "ezsystems/ezplatform-design-engine": "^3.1@dev",
-        "ezsystems/ezplatform-ee-installer": "^3.2@dev",
+        "ezsystems/ezplatform-ee-installer": "dev-ezp-32040-changed-welcome-page-descriptions as 3.2.x-dev",
         "ezsystems/ezplatform-elastic-search-engine": "^1.1@dev",
         "ezsystems/ezplatform-form-builder": "^2.2@dev",
         "ezsystems/ezplatform-graphql": "^2.2@dev",
@@ -37,7 +52,7 @@
         "ezsystems/ezplatform-http-cache-fastly": "^2.1@dev",
         "ezsystems/ezplatform-kernel": "^1.2@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.1@dev",
-        "ezsystems/ezplatform-page-builder": "^2.2@dev",
+        "ezsystems/ezplatform-page-builder": "dev-EZP-32040-adjust-tests as 2.2.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.2@dev",
         "ezsystems/ezplatform-permissions": "^1.1@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.2@dev",
