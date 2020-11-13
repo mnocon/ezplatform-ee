@@ -86,6 +86,7 @@ docker-compose -f doc/docker/install-dependencies.yml up --abort-on-container-ex
 
 echo "> Start docker containers specified by ${COMPOSE_FILE}"
 docker-compose up -d
+docker-compose exec app composer self-update --2
 
 # for behat builds to work
 echo '> Change ownership of files inside docker container'
