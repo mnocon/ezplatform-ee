@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "7F913009-3D5D-4F31-9F66-7F1CF450B848": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-kernel"
+        },
+        "C61E0BCD-77DC-4B58-B863-F62EA2765DA6": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-site-factory"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -34,7 +45,7 @@
         "ezsystems/ezplatform-graphql": "~2.1.0@dev",
         "ezsystems/ezplatform-http-cache": "~2.1.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
-        "ezsystems/ezplatform-kernel": "~1.1.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-EZEE-3356 as 1.1.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.0.0@dev",
         "ezsystems/ezplatform-page-builder": "~2.1.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.1.0@dev",
@@ -43,7 +54,7 @@
         "ezsystems/ezplatform-rest": "~1.1.0@dev",
         "ezsystems/ezplatform-richtext": "~2.1.0@dev",
         "ezsystems/ezplatform-search": "~1.0.0@dev",
-        "ezsystems/ezplatform-site-factory": "~1.1.0@dev",
+        "ezsystems/ezplatform-site-factory": "dev-EZEE-3356 as 1.1.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "~3.1.0@dev",
         "ezsystems/ezplatform-standard-design": "~0.3.0@dev",
         "ezsystems/ezplatform-user": "~2.1.0@dev",
