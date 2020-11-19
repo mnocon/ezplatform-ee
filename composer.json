@@ -10,21 +10,59 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "D72B5BEC-6F1D-4E06-A5A2-A4B154120564": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezcommerce-shop"
+        },
+        "E7C05B9C-E58A-4F46-99DE-CD5A8F3E12A5": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezcommerce-page-builder"
+        },
+        "6B008017-820A-4A40-99D8-3E9D5F0B26D0": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder"
+        },
+        "88F765D4-4F59-43FB-9A9F-E13A3BFB3502": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow"
+        },
+        "6DFA280A-5F87-4B68-B05F-858F9FBA4480": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "110E7221-3E90-4BBD-A623-3D4BDB01F2E5": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-segmentation"
+        },
+        "C26BB51B-CC1D-4A02-984C-4078B1DCAE39": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "6FED5E5C-9727-40E8-8944-CE7820B97B2E": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-user"
+        },
+        "E2C564CF-3BBF-481F-8BB3-F2E5A1166B76": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ez.no/ttl"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
-        "ezsystems/date-based-publisher": "~4.2.0@dev",
+        "ezsystems/date-based-publisher": "dev-fix_icon_paths as 4.2.x-dev",
         "ezsystems/doctrine-dbal-schema": "~1.0.0@dev",
         "ezsystems/ez-support-tools": "~2.2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~2.2.0@dev",
+        "ezsystems/ezcommerce-page-builder": "dev-fix_icon_paths as 1.1.x-dev",
+        "ezsystems/ezcommerce-shop": "dev-fix_icon_paths as 3.2.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-fix_icons as 2.2.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.2.2@rc",
         "ezsystems/ezplatform-calendar": "~1.2.0@dev",
         "ezsystems/ezplatform-connector-dam": "~1.0.0@dev",
@@ -34,27 +72,27 @@
         "ezsystems/ezplatform-design-engine": "~3.0.0@dev",
         "ezsystems/ezplatform-ee-installer": "~3.2.0@dev",
         "ezsystems/ezplatform-elastic-search-engine": "~1.1.0@dev",
-        "ezsystems/ezplatform-form-builder": "~2.2.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-fix_icon_paths as 2.2.x-dev",
         "ezsystems/ezplatform-graphql": "~2.2.0@dev",
         "ezsystems/ezplatform-http-cache": "~2.2.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
         "ezsystems/ezplatform-kernel": "~1.2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.1.0@dev",
-        "ezsystems/ezplatform-page-builder": "~2.2.0@dev",
+        "ezsystems/ezplatform-page-builder": "dev-fix_icons as 2.2.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.2.0@dev",
         "ezsystems/ezplatform-permissions": "~1.0.0@dev",
         "ezsystems/ezplatform-query-fieldtype": "~2.2.0@dev",
         "ezsystems/ezplatform-rest": "~1.2.0@dev",
         "ezsystems/ezplatform-richtext": "~2.2.0@dev",
         "ezsystems/ezplatform-search": "~1.1.0@dev",
-        "ezsystems/ezplatform-segmentation": "~1.0.0@dev",
+        "ezsystems/ezplatform-segmentation": "dev-fix_icons as 1.0.x-dev",
         "ezsystems/ezplatform-site-factory": "~1.2.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "~3.2.0@dev",
         "ezsystems/ezplatform-standard-design": "~0.3.0@dev",
-        "ezsystems/ezplatform-user": "~2.2.0@dev",
+        "ezsystems/ezplatform-user": "dev-fix_icons as 2.2.x-dev",
         "ezsystems/ezplatform-version-comparison": "~1.2.0@dev",
-        "ezsystems/ezplatform-workflow": "~2.2.0@dev",
+        "ezsystems/ezplatform-workflow": "dev-fix_icon_paths as 2.2.x-dev",
         "friendsofsymfony/jsrouting-bundle": "^2.5.1",
         "gregwar/captcha-bundle": "^2.0",
         "hautelook/templated-uri-bundle": "^3.3",
