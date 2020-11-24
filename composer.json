@@ -10,12 +10,24 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "30981DCC-6877-4678-821F-5155EB67D5F1": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-kernel"
+        },
+        "60BA7762-BB62-46E6-8C62-1C0F875DE3D4": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "42D82FEF-3295-4C54-85C7-E38ED59560DD": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-content-forms"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ez.no/ttl"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -24,11 +36,11 @@
         "ezsystems/date-based-publisher": "^4.2@dev",
         "ezsystems/doctrine-dbal-schema": "^1.1@dev",
         "ezsystems/ez-support-tools": "^2.2@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.2@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZEE-3050-save-additional-image-data as 2.3.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.2.2@rc",
         "ezsystems/ezplatform-calendar": "^1.2@dev",
         "ezsystems/ezplatform-connector-dam": "^1.0@dev",
-        "ezsystems/ezplatform-content-forms": "^1.2@dev",
+        "ezsystems/ezplatform-content-forms": "dev-EZEE-3050-save-additional-image-data as 1.3.x-dev",
         "ezsystems/ezplatform-core": "^2.2@dev",
         "ezsystems/ezplatform-cron": "^3.1@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
@@ -39,7 +51,7 @@
         "ezsystems/ezplatform-http-cache": "^2.2@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.0@dev",
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
-        "ezsystems/ezplatform-kernel": "^1.3@dev",
+        "ezsystems/ezplatform-kernel": "dev-ezee-3350-store-image-data as 1.3.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.1@dev",
         "ezsystems/ezplatform-page-builder": "^2.2@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.2@dev",
