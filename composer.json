@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "95e2526e-efd5-401f-884e-69fd7358c21b": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "a513aa07-afcc-4d53-a932-ee7f0326bed8": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-matrix-fieldtype"
+        }
+    },
     "replace": {
         "ezsystems/ezstudio": "*",
         "ezsystems/ezpublish-community": "*"
@@ -21,11 +32,18 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle/"
         },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
     },
     "require": {
         "php": "^7.1.3",
@@ -34,7 +52,7 @@
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/doctrine-dbal-schema": "^0.1@dev",
         "ezsystems/ez-support-tools": "^1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^1.5@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-32212-ezmatrix-overflow-table-behat-test as 1.5.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^1.5@dev",
         "ezsystems/ezplatform-core": "^1.0@dev",
@@ -45,7 +63,7 @@
         "ezsystems/ezplatform-graphql": "^1.0@dev",
         "ezsystems/ezplatform-http-cache": "^1.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
-        "ezsystems/ezplatform-matrix-fieldtype": "^1.0@dev",
+        "ezsystems/ezplatform-matrix-fieldtype": "dev-EZP-32212-matrix-table-overflow as 1.0.x-dev",
         "ezsystems/ezplatform-page-builder": "^1.3@dev",
         "ezsystems/ezplatform-page-fieldtype": "^1.3@dev",
         "ezsystems/ezplatform-richtext": "^1.1@dev",
