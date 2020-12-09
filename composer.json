@@ -10,12 +10,16 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "892FD2B1-EFFE-438C-BCCA-8B2056CB0B38": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-kernel"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ibexa.co"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -39,7 +43,7 @@
         "ezsystems/ezplatform-http-cache": "^2.2@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.0@dev",
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
-        "ezsystems/ezplatform-kernel": "^1.3@dev",
+        "ezsystems/ezplatform-kernel": "dev-ezp32031_better_binarybase_filename_generation as 1.3.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.1@dev",
         "ezsystems/ezplatform-page-builder": "^2.2@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.2@dev",
