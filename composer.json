@@ -10,18 +10,22 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "E0AD5417-F51F-4175-9451-CA3DA79B45E5": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ibexa.co"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
-        "ezsystems/date-based-publisher": "^4.2@dev",
+        "ezsystems/date-based-publisher": "dev-remove_dependency_on_pb as 4.3.x-dev",
         "ezsystems/doctrine-dbal-schema": "^1.1@dev",
         "ezsystems/ez-support-tools": "^2.2@dev",
         "ezsystems/ezplatform-admin-ui": "^2.2@dev",
