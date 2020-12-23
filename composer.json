@@ -39,7 +39,7 @@
         "ezsystems/ezplatform-http-cache": "^2.3@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.1@dev",
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
-        "ezsystems/ezplatform-kernel": "^1.3@dev",
+        "ezsystems/ezplatform-kernel": "dev-ezp_32250_and_ezp_32247 as 1.3.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.2@dev",
         "ezsystems/ezplatform-page-builder": "^2.3@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.3@dev",
