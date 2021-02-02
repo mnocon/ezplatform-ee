@@ -10,12 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "92BA979F-3D91-454D-BE07-D216E68521BD": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "B1B6A706-BCD2-4E68-B60A-30ED875A91E3": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ez.no/ttl"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -24,7 +32,7 @@
         "ezsystems/date-based-publisher": "~4.2.0@dev",
         "ezsystems/doctrine-dbal-schema": "~1.0.0@dev",
         "ezsystems/ez-support-tools": "~2.2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~2.2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZEE-3375-multiple-pb-blocks-attribute-is-not-rendering-properly as 2.2.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.2.2@rc",
         "ezsystems/ezplatform-calendar": "~1.2.0@dev",
         "ezsystems/ezplatform-connector-dam": "~1.0.0@dev",
@@ -41,7 +49,7 @@
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
         "ezsystems/ezplatform-kernel": "~1.2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.1.0@dev",
-        "ezsystems/ezplatform-page-builder": "~2.2.0@dev",
+        "ezsystems/ezplatform-page-builder": "dev-EZEE-3375-multiple-pb-blocks-attribute-is-not-rendering-properly as 2.2.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.2.0@dev",
         "ezsystems/ezplatform-permissions": "~1.0.0@dev",
         "ezsystems/ezplatform-query-fieldtype": "~2.2.0@dev",
