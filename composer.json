@@ -10,12 +10,16 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "86B28479-E307-42DA-8DAC-CE427879CF01": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-kernel"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ez.no/ttl"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -39,7 +43,7 @@
         "ezsystems/ezplatform-http-cache": "~2.2.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
-        "ezsystems/ezplatform-kernel": "~1.2.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-merge-1.2/ibx-143-dbal-2.13-compat as 1.2.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.1.0@dev",
         "ezsystems/ezplatform-page-builder": "~2.2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.2.0@dev",
