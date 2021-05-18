@@ -10,12 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "3F97735F-644D-44BA-844E-C43125A86EE3": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "E22E5BFB-9351-46A5-8DC2-4067609DB027": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-kernel"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ez.no/ttl"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -24,7 +32,7 @@
         "ezsystems/date-based-publisher": "~4.2.0@dev",
         "ezsystems/doctrine-dbal-schema": "~1.0.0@dev",
         "ezsystems/ez-support-tools": "~2.2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~2.2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-fix-url-count as 2.2.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.2.2@rc",
         "ezsystems/ezplatform-calendar": "~1.2.0@dev",
         "ezsystems/ezplatform-connector-dam": "~1.0.0@dev",
@@ -39,7 +47,7 @@
         "ezsystems/ezplatform-http-cache": "~2.2.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "~2.0.0@dev",
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
-        "ezsystems/ezplatform-kernel": "~1.2.0@dev",
+        "ezsystems/ezplatform-kernel": "dev-fix-url-count as 1.2.x-dev",
         "ezsystems/ezplatform-matrix-fieldtype": "~2.1.0@dev",
         "ezsystems/ezplatform-page-builder": "~2.2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "~2.2.0@dev",
