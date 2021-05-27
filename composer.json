@@ -10,9 +10,20 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "64F93D75-0D56-467E-A92F-D2097393BC08": {
+            "type": "vcs",
+            "url": "https://github.com/micszo/ezplatform-admin-ui"
+        },
+        "AED53448-6F13-4205-BF48-DB0C18570BB7": {
+            "type": "vcs",
+            "url": "https://github.com/micszo/BehatBundle"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        }
+    },
     "replace": {
         "ezsystems/ezstudio": "*",
         "ezsystems/ezpublish-community": "*"
@@ -21,20 +32,28 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle/"
         },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
     },
     "require": {
         "php": "^7.1.3",
         "doctrine/doctrine-bundle": "^1.9.1",
         "doctrine/orm": "^2.6.3",
+        "ezsystems/behatbundle": "dev-ibx-405-change-password as 7.0.x-dev",
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/doctrine-dbal-schema": "^0.1@dev",
         "ezsystems/ez-support-tools": "^1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^1.5@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-ibx-405-change-password as 1.5.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^1.5@dev",
         "ezsystems/ezplatform-core": "^1.0@dev",
@@ -86,7 +105,6 @@
         "ezsystems/allure-behat": "^2.0@dev",
         "ezsystems/allure-php-api": "^2.0@dev",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1.0@dev",
-        "ezsystems/behatbundle": "^7.0.0@dev",
         "liuggio/fastest": "~1.6.0",
         "overblog/graphiql-bundle": "^0.1.2",
         "phpunit/phpunit": "^6.5.13",
