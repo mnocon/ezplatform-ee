@@ -10,9 +10,24 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "D2B1ECFC-AE9E-4258-8DA5-645F6E56C9EF": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        },
+        "D36211D2-C486-4E35-92D1-757B366C1255": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-fieldtype"
+        },
+        "429FDC03-DFCA-4F64-8588-9EC7D68DB8A6": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        }
+    },
     "replace": {
         "ezsystems/ezstudio": "*",
         "ezsystems/ezpublish-community": "*"
@@ -21,11 +36,18 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle/"
         },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
     },
     "require": {
         "php": "^7.1.3",
@@ -34,7 +56,7 @@
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/doctrine-dbal-schema": "^0.1@dev",
         "ezsystems/ez-support-tools": "^1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^1.5@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-backport-lp-css as 1.5.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^1.5@dev",
         "ezsystems/ezplatform-core": "^1.0@dev",
@@ -46,8 +68,8 @@
         "ezsystems/ezplatform-http-cache": "^1.0@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^1.0@dev",
-        "ezsystems/ezplatform-page-builder": "^1.3@dev",
-        "ezsystems/ezplatform-page-fieldtype": "^1.3@dev",
+        "ezsystems/ezplatform-page-builder": "dev-backport-landing-page-config as 1.3.x-dev",
+        "ezsystems/ezplatform-page-fieldtype": "dev-backport-lp-config as 1.3.x-dev",
         "ezsystems/ezplatform-richtext": "^1.1@dev",
         "ezsystems/ezplatform-solr-search-engine": "^1.6@dev",
         "ezsystems/ezplatform-standard-design": "^0.2@dev",
